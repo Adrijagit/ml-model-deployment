@@ -17,7 +17,7 @@ def main():
 if __name__ == '__main__':
     main()\
 #@st.cache(persist=True)
-data= pd.read_csv('C:/Users/KALYAN KUMAR GUHA/Desktop/ml-deploy/mushrooms.csv')
+data= pd.read_csv('mushrooms.csv')
 label= LabelEncoder()
 for i in data.columns:
     data[i] = label.fit_transform(data[i])
